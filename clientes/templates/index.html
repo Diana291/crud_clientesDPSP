@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--para que no se vea en miniatura -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--titulo de nuestra pagina -->
+    <title> Reser Santi 703A </title>
+    <!--enlace a hoja de estilos CSS-->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'clientes/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'clientes/css/boxicons.min.css' %}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Re<span>ser</span> San<span>ti</span></a>
+        <ul class="navbar">
+            <li> <a href="#home">Inicio </a> </li>
+            <li> <a href="#info">Información </a> </li>
+            <li> <a href="#">Nosotros </a> </li>
+            <li> <a href="#">Contacto </a> </li>       
+        </ul>
+        <div class="h-derecha">
+            <a href="#">Síguenos</a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+<section class="home" id="home">
+    <div class="home-text">
+        <h5 id="typed">Reserva</h5>
+        <h1>Una mesa a un click</h1>
+        <p>Reservar nunca había sido tan fácil,<br> ven y conoce 
+            toda nuestra cartelera de restaurantes locales 
+        </p>
+        <a href="#" id="btn-Reservar" class="btn" > Reservar ya</a>
+
+    </div>
+</section>
+<section class="columnas" id="info">
+    <div data-aos="zoom-in-up" class="col-content">
+        <div class="row">
+            <div class="row-img">
+                <img src="{% static 'clientes/img/res3.jpg' %}" alt="imagen de mesas">
+            </div>
+            <h4>Restaurantes</h4>
+        </div>
+        <div class="row">
+            <div class="row-img">
+                <img src="{% static 'clientes/img/reserv.jpg' %}" alt="imagen de reserva">
+            </div>
+            <h4>Reserva</h4>
+        </div>
+        <div class="row">
+            <div class="row-img">
+                <img src="{% static 'clientes/img/platos.jpg' %}" alt="imagen de comida">
+            </div>
+            <h4>Tipos de comida</h4>
+        </div>
+        <div class="row">
+            <div class="row-img">
+                <img src="{% static 'clientes/img/map.jpg' %}" alt="imagen de mapa">
+            </div>
+            <h4>Mapa</h4>
+        </div>       
+    </div>
+    
+</section>
+<div class="fon">
+    <div data-aos="flip-left" class="fon-cont">
+        <div class="fon-img">
+            <img src="{% static 'clientes/img/memb.jpg' %}" alt="imagen de fondo de membresia">
+        </div>
+        <div class="ing-text">
+            <h5 id="typed2">Visita tu restaurante favorito</h5>
+            <h3>No te lo puedes perder</h3>
+            <p>Puedes comprar una menbresia al<br>
+                restaurante que desees
+            </p>
+            <a href="#" id="btn-Explorar" class="bot" > Explorar restaurantes</a>
+    
+        </div>
+    </div>
+</div>
+
+ <!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <!-- Imagen o logotipo -->
+        <div data-aos="fade-right" class="footer-image">
+            <img src="{% static 'clientes/img/logo1.jpg' %}" alt="Logo de Reser Santi">
+        </div>
+
+        <!-- Contenido principal -->
+        <div data-aos="fade-up" class="footer-content">
+            <h3>Reser Santi 703A</h3>
+            <p>La mejor plataforma para reservar mesas en tus restaurantes favoritos. Disfruta de una experiencia gastronómica única.</p>
+            <ul class="socials">
+                <li><a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="#" aria-label="YouTube"><i class='bx bxl-youtube'></i></a></li>
+                <li><a href="#" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Información adicional -->
+        <div data-aos="fade-left" class="footer-info">
+            <h4>Contacto</h4>
+            <p>Email: contacto@resersanti.com</p>
+            <p>Teléfono: +52 (924) 123-4567</p>
+            <p>Ubicación: Calle Centro 123, Ciudad Acayucan</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 <span class="brand-name">Reser Santi</span>. Todos los derechos reservados.</p>
+        <p>Diseñado con <i class='bx bxs-heart' style="color: var(--main-color);"></i> por el equipo de Reser Santi.</p>
+    </div>
+</footer>
+
+
+
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="static/clientes/js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>
