@@ -8,6 +8,7 @@ import datetime
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.db.models import Q
+from django.templatetags.static import static
 
 
 # Create your views here.
@@ -80,7 +81,7 @@ def generar_pdf_cliente(request):
     pdf.drawString(x, height - 40, texto)
 
         # Insertar la imagen al lado del título
-    ruta_imagen = "static/clientes/cliente.jpg" 
+    ruta_imagen = static("clientes/logo1.jpg")
     x_imagen = 420  
     y_imagen = height -70  
     ancho_img= 60
