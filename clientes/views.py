@@ -80,7 +80,7 @@ def generar_pdf_cliente(request):
     pdf.drawString(x, height - 40, texto)
 
         # Insertar la imagen al lado del título
-    ruta_imagen = "C:\\Users\\diana\\OneDrive\\Documentos\\7 semestre\\cliente.JPG" 
+    ruta_imagen = "static/clientes/cliente.jpg" 
     x_imagen = 420  
     y_imagen = height -70  
     ancho_img= 60
